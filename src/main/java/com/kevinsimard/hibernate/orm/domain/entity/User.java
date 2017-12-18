@@ -7,6 +7,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="user")
+@SuppressWarnings("unused")
 public class User {
 
     @Id

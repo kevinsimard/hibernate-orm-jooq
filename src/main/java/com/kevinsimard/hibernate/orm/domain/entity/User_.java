@@ -4,6 +4,7 @@ import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
 @StaticMetamodel(User.class)
+@SuppressWarnings("unused")
 public abstract class User_ {
 
     public static volatile SingularAttribute<User, Long> id;
