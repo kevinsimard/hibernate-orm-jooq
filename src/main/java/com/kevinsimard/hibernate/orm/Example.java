@@ -40,7 +40,6 @@ public class Example {
         query.where(builder.equal(root.get(User_.username), username))
             .where(builder.equal(root.get(User_.email), email));
 
-        @SuppressWarnings("unused")
         User user1 = em.createQuery(query).getSingleResult();
 
         diff = System.currentTimeMillis() - start;
@@ -57,7 +56,6 @@ public class Example {
             DSL.field("email", String.class)
         );
 
-        @SuppressWarnings("unused")
         User user2 = (User) select.from("user")
             .where("username = ?", username)
             .and("email = ?", email)
