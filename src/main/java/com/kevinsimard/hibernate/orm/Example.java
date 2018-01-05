@@ -11,7 +11,12 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class Example {
+
+    private static final Logger log = LoggerFactory.getLogger(Example.class);
 
     public static void main(String[] args) {
         String username = "foobar";
@@ -25,7 +30,7 @@ public class Example {
 
         long diff = System.currentTimeMillis() - start;
 
-        System.out.println("Hibernate Initialize: " + diff + " milliseconds");
+        log.info("Hibernate Initialize: " + diff + " milliseconds");
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -44,7 +49,7 @@ public class Example {
 
         diff = System.currentTimeMillis() - start;
 
-        System.out.println("EntityManager Query: " + diff + " milliseconds");
+        log.info("EntityManager Query: " + diff + " milliseconds");
 
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -63,6 +68,6 @@ public class Example {
 
         diff = System.currentTimeMillis() - start;
 
-        System.out.println("JOOQ Query: " + diff + " milliseconds");
+        log.info("JOOQ Query: " + diff + " milliseconds");
     }
 }
