@@ -13,8 +13,7 @@
     │       │               └── orm
     │       │                   ├── domain
     │       │                   │   └── entity
-    │       │                   │       ├── User.java
-    │       │                   │       └── User_.java
+    │       │                   │       └── User.java
     │       │                   ├── util
     │       │                   │   └── DatabaseUtil.java
     │       │                   └── Example.java
