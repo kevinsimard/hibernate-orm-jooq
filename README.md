@@ -1,4 +1,4 @@
-# MySQL Hibernate ORM Example
+# MySQL Hibernate ORM
 
 ## Code Structure
 
@@ -16,7 +16,7 @@
     │       │                   │       └── User.java
     │       │                   ├── util
     │       │                   │   └── DatabaseUtil.java
-    │       │                   └── Example.java
+    │       │                   └── Application.java
     │       └── resources
     │           └── META-INF
     │               └── persistence.xml
